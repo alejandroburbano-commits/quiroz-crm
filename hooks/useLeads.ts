@@ -49,7 +49,7 @@ export function useLeads() {
       queryClient.invalidateQueries({ queryKey: ['leads'] })
       toast.success('✅ Lead creado exitosamente')
     },
-    onError: (error: any) => {
+    onError: (error: Record<string, unknown>) => {
       toast.error(`❌ Error al crear: ${error.message}`)
       console.error(error)
     }
@@ -72,7 +72,7 @@ export function useLeads() {
       queryClient.invalidateQueries({ queryKey: ['leads'] })
       toast.success('✅ Lead actualizado')
     },
-    onError: (error: any) => {
+    onError: (error: Record<string, unknown>) => {
       toast.error(`❌ Error al actualizar: ${error.message}`)
       console.error(error)
     }
@@ -92,7 +92,7 @@ export function useLeads() {
       queryClient.invalidateQueries({ queryKey: ['leads'] })
       toast.success('🗑️ Lead eliminado')
     },
-    onError: (error: any) => {
+    onError: (error: Record<string, unknown>) => {
       toast.error(`❌ Error al eliminar: ${error.message}`)
       console.error(error)
     }
