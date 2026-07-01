@@ -1,0 +1,17 @@
+﻿node_modules/
+.next/
+out/
+dist/
+.env.local
+.env.production
+.env.development
+.DS_Store
+Thumbs.db
+*.log
+*.lock
+package-lock.json
+yarn.lock
+.vscode/
+.idea/
+*.swp
+*.swo
